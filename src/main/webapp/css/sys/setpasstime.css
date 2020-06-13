@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+#main-content{
+    border: 1px solid #000;
+    padding:0px!important
+
+}
+
+#deptree{
+    height: 100%;
+    padding:0px!important
+}
+#emptable{
+    height: 100%;
+    padding:0px!important
+}
+
+#myprogress{
+    height: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.checkbix{
+    margin: 4px 4px;
+}
+
+.passtime{
+    padding: 10px 30px;
+}
+
+/*ztree表格*/
+.ztree {
+    padding: 0;
+    border: 2px solid #CDD6D5;
+}
+
+.ztree li a {
+    vertical-align: middle;
+}
+
+.ztree li > a {
+    width: 100%;
+}
+
+.ztree li > a,
+.ztree li a.curSelectedNode {
+    padding-top: 0px;
+    height: auto;
+    border: none;
+    cursor: default;
+    opacity: 1;
+}
+
+.ztree li ul {
+    padding-left: 0px
+}
+
+.ztree div.diy span {
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.ztree div.diy {
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    border-top: 1px dotted #ccc;
+    border-left: 1px solid #eeeeee;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #555;
+    font-family: "SimSun";
+    font-size: 12px;
+    overflow:auto;
+}
+
+.ztree div.diy:first-child {
+    text-align: left;
+    text-indent: 10px;
+    border-left: none;
+}
+
+.ztree .head {
+    background: #fff;
+}
+
+.ztree .head div.diy {
+    border-top: none;
+    border-right: 1px solid #ddd;
+    color: #000;
+    font-bold:1200;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+/*end--ztree表格*/

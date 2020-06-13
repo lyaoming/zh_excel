@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ketansoft.excel.mapper.PersonnelStatusDao">
+
+	<select id="queryObject" resultType="com.ketansoft.excel.entity.PersonnelStatusEntity">
+		select * from personnel_status where s_id = #{value}
+	</select>
+
+	<select id="queryList" resultType="com.ketansoft.excel.entity.PersonnelStatusEntity">
+		select * from personnel_status 
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from personnel_status 
+	</select>
+
+    <insert id="saveBatch">
+        insert into personnel_status
+        (
+												`s_id`, 
+																`s_name`
+
+							        )
+        VALUES
+        <foreach collection ="list" item="com.ketansoft.excel.entity.PersonnelStatusEntity" separator =",">
+		(
+									#{sId}, 
+												#{sName}
+					         )
+        </foreach>
+    </insert>
+
+	<insert id="save" parameterType="com.ketansoft.excel.entity.PersonnelStatusEntity">
+		insert into personnel_status
+		(
+												`s_id`, 
+															`s_name`
+								)
+		values
+		(
+												#{sId}, 
+															#{sName}
+								)
+	</insert>
+	 
+	<update id="update" parameterType="com.ketansoft.excel.entity.PersonnelStatusEntity">
+		update personnel_status 
+		<set>
+															<if test="sName != null">`s_name` = #{sName}, </if>
+												<if test="sFactor != null">`s_factor` = #{sFactor}</if>
+								</set>
+		where s_id = #{sId}
+	</update>
+	
+	<delete id="delete">
+		delete from personnel_status where s_id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from personnel_status where s_id in 
+		<foreach item="sId" collection="array" open="(" separator="," close=")">
+			#{sId}
+		</foreach>
+	</delete>
+
+</mapper>

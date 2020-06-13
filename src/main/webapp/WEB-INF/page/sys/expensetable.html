@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp">
+	<div class="grid-btn">
+		<div class="form-group col-sm-2">
+			<input type="text" class="form-control" v-model="pName" @click="selectPersonnel" placeholder="姓名">
+		</div>
+		<div class="form-group col-sm-2">
+			<input type="text" class="form-control" id="year" @keyup.enter="query" placeholder="年份">
+		</div>
+		<input class="btn btn-sm btn-success" type="button" @click="query" value="查询数据"/>
+		<input class="btn btn-info btn-sm" type="button" @click="classexport" value="导出查询"/>
+		<input class="btn btn-warning btn-sm" type="button" @click="selectexport" value="导出选中"/>
+	</div>
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" style="width: 90%;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body" style="overflow-x: scroll;">
+					<div class="form-group col-sm-2">
+						<input type="text" class="form-control" v-model="pName"  placeholder="姓名">
+					</div>
+					<label class="radio-inline" v-for="status in personnelStatus">
+						<input type="radio" name="Status" v-model="pStatus"  v-bind:value="status.sId"/> {{status.sName}}&nbsp;&nbsp;
+					</label>
+					<input class="btn btn-default" type="button" @click="search" value="查询"/>&nbsp;&nbsp;
+					<button type="button" class="btn btn-primary"  data-dismiss="modal" @click="saveSelect" >确定</button>
+					<div class="col-md-12">
+					<table id="pjqGrid"></table>
+					<div id="pjqGridPager"></div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default"  data-dismiss="modal" value="取消"/>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+</div>
+
+<script src="${rc.contextPath}/js/sys/expensetable.js?_${date.systemTime}"></script>
+<script src="${rc.contextPath}/statics/plugins/layui/layui.js"></script> <!-- 改成你的路径 -->
+<script>
+	//执行一个laydate实例
+	layui.use('laydate',function () {
+		var laydate=layui.laydate;
+		laydate.render({
+			elem: '#year', //指定元素
+			eventElem: '#year-1',
+			type:'year'
+		});
+	})
+</script>
+</body>
+</html>

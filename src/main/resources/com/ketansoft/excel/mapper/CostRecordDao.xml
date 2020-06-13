@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ketansoft.excel.mapper.CostRecordDao">
+
+	<select id="queryObject" resultType="com.ketansoft.excel.entity.CostRecordEntity">
+		select b.p_name,a.c_id,a.p_id,a.in_date,a.out_date,a.classion,a.all_selfcost,a.self_cost,a.base_num,a.m_factor,a.m_cost,a.m_nocost,a.ma_self,a.ma_reduce,a.cost_all,a.ac_cost,a.pev_ma,a.now_ma,c.d_name,year,remark,a.out_macount from cost_record as a,personnel as b,medical_factor as c where a.p_id=b.p_id and a.classion=c.d_id and c_id = #{value}
+	</select>
+
+	<select id="queryList" resultType="com.ketansoft.excel.entity.CostRecordEntity">
+		select b.p_name,d.s_name,a.c_id,a.p_id,a.in_date,a.out_date,a.classion,a.all_selfcost,a.self_cost,a.base_num,a.m_factor,a.m_cost,a.m_nocost,a.ma_self,a.ma_reduce,a.cost_all,a.ac_cost,a.pev_ma,a.now_ma,c.d_name,year,remark,a.out_macount from cost_record as a,personnel as b,medical_factor as c,personnel_status as d
+		<where>
+			b.p_status=d.s_id and a.p_id=b.p_id and a.classion=c.d_id
+			<if test="pName!=null and pName.trim()!=''">
+				and b.p_name like concat('%', #{pName}, '%')
+			</if>
+			<if test="classion!=null">
+				and a.classion=#{classion}
+			</if>
+			<if test="year!=null">
+				and year=#{year}
+			</if>
+		</where>
+		<choose>
+			<otherwise>
+				order by a.c_id
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+
+
+	<select id="queryMa" resultType="com.ketansoft.excel.entity.CostRecordEntity">
+		select * from cost_record where p_id = #{pId}
+		<choose>
+			<otherwise>
+				order by c_id
+			</otherwise>
+		</choose>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from cost_record 
+	</select>
+
+
+
+	<insert id="save" parameterType="com.ketansoft.excel.entity.CostRecordEntity">
+		insert into cost_record
+		(
+												`c_id`, 
+															`p_id`, 
+															`in_date`, 
+															`out_date`, 
+															`classion`, 
+															`all_selfcost`, 
+															`self_cost`, 
+															`base_num`, 
+															`m_factor`, 
+															`m_cost`, 
+															`m_nocost`, 
+															`ma_self`, 
+															`ma_reduce`, 
+															`cost_all`, 
+															`ac_cost`, 
+															`pev_ma`, 
+															`now_ma`,
+															`year`,
+															`out_macount`,
+															`remark`
+								)
+		values
+		(
+												#{cId}, 
+															#{pId}, 
+															#{inDate}, 
+															#{outDate}, 
+															#{classion}, 
+															#{allSelfcost}, 
+															#{selfCost}, 
+															#{baseNum}, 
+															#{mFactor}, 
+															#{mCost}, 
+															#{mNocost}, 
+															#{maSelf}, 
+															#{maReduce}, 
+															#{costAll}, 
+															#{acCost}, 
+															#{pevMa}, 
+															#{nowMa},
+															#{year},
+															#{outMacount},
+															#{remark}
+								)
+	</insert>
+	 
+	<update id="update" parameterType="com.ketansoft.excel.entity.CostRecordEntity">
+		update cost_record 
+		<set>
+															<if test="pId != null">`p_id` = #{pId}, </if>
+												<if test="inDate != null">`in_date` = #{inDate}, </if>
+												<if test="outDate != null">`out_date` = #{outDate}, </if>
+												<if test="classion != null">`classion` = #{classion}, </if>
+												<if test="allSelfcost != null">`all_selfcost` = #{allSelfcost}, </if>
+												<if test="selfCost != null">`self_cost` = #{selfCost}, </if>
+												<if test="baseNum != null">`base_num` = #{baseNum}, </if>
+												<if test="mFactor != null">`m_factor` = #{mFactor}, </if>
+												<if test="mCost != null">`m_cost` = #{mCost}, </if>
+												<if test="mNocost != null">`m_nocost` = #{mNocost}, </if>
+												<if test="maSelf != null">`ma_self` = #{maSelf}, </if>
+												<if test="maReduce != null">`ma_reduce` = #{maReduce}, </if>
+												<if test="costAll != null">`cost_all` = #{costAll}, </if>
+												<if test="acCost != null">`ac_cost` = #{acCost}, </if>
+												<if test="pevMa != null">`pev_ma` = #{pevMa}, </if>
+												<if test="nowMa != null">`now_ma` = #{nowMa}, </if>
+												<if test="year != null">`year` = #{year},</if>
+			                                    <if test="outMacount != null">`out_macount` = #{outMacount},</if>
+			                                    <if test="remark != null">`remark` = #{remark}</if>
+								</set>
+		where c_id = #{cId}
+	</update>
+	
+	<delete id="delete">
+		delete from cost_record where c_id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from cost_record where c_id in 
+		<foreach item="cId" collection="array" open="(" separator="," close=")">
+			#{cId}
+		</foreach>
+	</delete>
+
+</mapper>

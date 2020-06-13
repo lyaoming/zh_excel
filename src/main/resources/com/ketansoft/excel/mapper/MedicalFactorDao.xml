@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ketansoft.excel.mapper.MedicalFactorDao">
+
+	<select id="queryObject" resultType="com.ketansoft.excel.entity.MedicalFactorEntity">
+		select * from medical_factor where d_id = #{value}
+	</select>
+
+	<select id="queryList" resultType="com.ketansoft.excel.entity.MedicalFactorEntity">
+		select * from medical_factor 
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from medical_factor 
+	</select>
+
+    <insert id="saveBatch">
+        insert into medical_factor
+        (
+												`d_id`, 
+																`d_name`, 
+																`d_factor`
+							        )
+        VALUES
+        <foreach collection ="list" item="com.ketansoft.excel.entity.MedicalFactorEntity" separator =",">
+		(
+									#{dId}, 
+												#{dName}, 
+												#{dFactor}
+					         )
+        </foreach>
+    </insert>
+
+	<insert id="save" parameterType="com.ketansoft.excel.entity.MedicalFactorEntity">
+		insert into medical_factor
+		(
+												`d_id`, 
+															`d_name`, 
+															`d_factor`
+								)
+		values
+		(
+												#{dId}, 
+															#{dName}, 
+															#{dFactor}
+								)
+	</insert>
+	 
+	<update id="update" parameterType="com.ketansoft.excel.entity.MedicalFactorEntity">
+		update medical_factor 
+		<set>
+															<if test="dName != null">`d_name` = #{dName}, </if>
+												<if test="dFactor != null">`d_factor` = #{dFactor}</if>
+								</set>
+		where d_id = #{dId}
+	</update>
+	
+	<delete id="delete">
+		delete from medical_factor where d_id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from medical_factor where d_id in 
+		<foreach item="dId" collection="array" open="(" separator="," close=")">
+			#{dId}
+		</foreach>
+	</delete>
+
+</mapper>

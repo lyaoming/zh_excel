@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.pag{
+	text-align:center;
+}
+li::before{
+	content:"";
+}

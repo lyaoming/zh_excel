@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff2') format('woff2'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 24px !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.button{color:#fff;background:#007eff;border:solid 1px #007eff;}
+
+.button:hover{background:red;color:#fff}body{background-color:#e8e8e8}input{outline:0}
+
+html{
+    touch-action: none;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+.range-time-text{
+    width: 100%;
+    text-align: center;
+}
+
+.range-time{
+    font-weight: bold;
+    text-align: center;
+    /*border: 1px solid grey;*/
+    /*width: 50px;*/
+    color: red;
+}
+
+.no-name-title{
+    height: 25px;
+    padding: 1px 1px;
+    border-bottom: 1px solid grey;
+}
+.tip-cirle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 40px;
+    border: 1px solid blanchedalmond;
+    background-color: grey;
+}
+
+.no-name{
+    border-bottom: 1px solid grey;
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.no-name-disable{
+    color: grey;
+    background-color: lightgrey;
+}
+
+
+#exampleInputUpload{
+    margin-left:15%;
+}
+
+body{
+    font-size: 15px!important;
+}
+
+#fileinput-exists{
+    color: white;
+}
+
+#org{
+	width:90%
+}
+
+.appoint-icon{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.myform{
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y:scroll;
+    /*margin-bottom:60px;*/
+    padding: 5px 20px;
+}
+
+.m-footer{
+    position: fixed;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 8%;
+}
+
+.passtype-group{
+    background: #fff;
+    width:auto;
+    padding-left:15px;
+    margin-top: 32px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.classroom{
+    position: relative;
+}
+
+.my-form-group{
+    height:45px;
+    line-height:45px;
+    background: #fff;
+    width:auto;
+    padding-left:15px;
+    margin-top: 32px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.form-icon{
+    font-size: 18px;
+    vertical-align: middle;
+    top: -3px;
+    color: rgb(255, 0, 0);
+}
+
+.search-icon{
+    position: absolute;
+    top : 12px;
+    right: 15px;
+    font-size: 20px;
+    vertical-align: middle;
+    /*right: -17px!important;*/
+}
+
+.form-input{
+    height:45px;
+    border:0;
+    width:auto;
+}
+
+.form-tip{
+    position:absolute;right: 0;bottom:-37px;font-size:13px;color: #f00;
+}
+
+.err-tip{
+    margin: 5px;
+    text-align: center;
+    color: #f00;
+}
+
+.form-title{
+    font-size: 30px;font-weight: bold;text-align: center;
+}
+
+#dropdown-menu{
+    min-width: 100%;
+}
+
+.selectHead{
+    text-align: center;
+    display:block;
+}
+
+.selectBody{
+	margin-left: 3%;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.selectSeat{
+	margin-left: 0.7%;
+    margin-top: 1%;
+    margin-right: 0.7%;
+}
+
+.yd-badge {
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    border-radius: 1000px;
+    line-height: 1;
+    padding: 3px 6px;
+    white-space: nowrap;
+    background-color: #d0d0d0;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.yd-badge-primary {
+    background-color: #04be02;
+    color: #fff;
+}
+
+.yd-badge-hollow {
+    background-color: #fbfbfb;
+    color: #b2b2b2;
+}
+
+.studentClass{
+	margin-top:9%;
+}

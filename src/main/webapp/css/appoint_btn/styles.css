@@ -1,0 +1,404 @@
+html {
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1,startColorstr='#FF1B5955',endColorstr='#FF5CA084');
+    background-size: 100% 100%
+}
+
+section {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 1em
+}
+
+body {
+    padding-bottom: 2em
+}
+
+h1 {
+    color: #fff;
+    font-family: oleo script,cursive;
+    font-size: 5rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 1rem 0;
+    text-align: center;
+    text-shadow: 0 .2rem .2rem rgba(0,0,0,.6),0 -.2rem .2rem rgba(255,255,255,.3);
+    width: 100%
+}
+
+h3 {
+    color: #fff;
+    float: left;
+    text-align: center;
+    text-shadow: 0 .2rem .2rem rgba(0,0,0,.6),0 -.2rem .2rem rgba(255,255,255,.3);
+    width: 100%
+}[class*=zocial-]:before {
+     font-family: zocial,sans-serif;
+     font-size: 3rem
+ }[class$=acrobat] {
+      background: #ab0000
+  }[class$=acrobat]:hover:after {
+       content: 'acrobat'
+   }[class$=amazon] {
+        background: #e47911
+    }[class$=amazon]:hover:after {
+         content: 'amazon'
+     }[class$=android] {
+          background: #a4c639
+      }[class$=android]:hover:after {
+           content: 'android'
+       }[class$=angellist] {
+            background: #303030
+        }[class$=angellist]:hover:after {
+             content: 'angellist'
+         }[class$=aol] {
+              background: #ff3801
+          }[class$=aol]:hover:after {
+               content: 'aol'
+           }[class$=appstore] {
+                background: #1ca3f3
+            }[class$=appstore]:hover:after {
+                 content: 'appstore'
+             }[class$=bitbucket] {
+                  background: #205081
+              }[class$=bitbucket]:hover:after {
+                   content: 'bitbucket'
+               }[class$=bitcoin] {
+                    background: #f7931a
+                }[class$=bitcoin]:hover:after {
+                     content: 'bitcoin'
+                 }[class$=blogger] {
+                      background: #fc4f08
+                  }[class$=blogger]:hover:after {
+                       content: 'blogger'
+                   }[class$=buffer] {
+                        background: #fff;
+                        color: #282828!important
+                    }[class$=buffer]:hover:after {
+                         color: #fff!important;
+                         content: 'buffer'
+                     }[class$=call] {
+                          background: #4bbb28
+                      }[class$=call]:hover:after {
+                           content: 'call'
+                       }[class$=cal] {
+                            background: #de372c
+                        }[class$=cal]:hover:after {
+                             content: 'cal'
+                         }[class$=cart] {
+                              background: #fff;
+                              color: #282828!important
+                          }[class$=cart]:hover:after {
+                               color: #fff!important;
+                               content: 'cart'
+                           }[class$=delicious] {
+                                background: #205cc0
+                            }[class$=delicious]:hover:after {
+                                 content: 'delicious'
+                             }[class$=digg] {
+                                  background: #fff;
+                                  color: #282828!important
+                              }[class$=digg]:hover:after {
+                                   color: #fff!important;
+                                   content: 'digg'
+                               }[class$=disqus] {
+                                    background: #59a3fc
+                                }[class$=disqus]:hover:after {
+                                     content: 'disqus'
+                                 }[class$=dribbble] {
+                                      background: #ea4c89
+                                  }[class$=dribbble]:hover:after {
+                                       content: 'dribbble'
+                                   }[class$=dropbox] {
+                                        background: #3d9ae8
+                                    }[class$=dropbox]:hover:after {
+                                         content: 'dropbox'
+                                     }[class$=drupal] {
+                                          background: #0c76ab
+                                      }[class$=drupal]:hover:after {
+                                           content: 'drupal'
+                                       }[class$=dwolla] {
+                                            background: #ff7404
+                                        }[class$=dwolla]:hover:after {
+                                             content: 'dwolla'
+                                         }[class$=email] {
+                                              background: #ffde27
+                                          }[class$=email]:hover:after {
+                                               content: 'email'
+                                           }[class$=eventbrite] {
+                                                background: #ff7100
+                                            }[class$=eventbrite]:hover:after {
+                                                 content: 'eventbrite'
+                                             }[class$=evernote] {
+                                                  background: #5ba525
+                                              }[class$=evernote]:hover:after {
+                                                   content: 'evernote'
+                                               }[class$=facebook] {
+                                                    background: #3b5998
+                                                }[class$=facebook]:hover:after {
+                                                     content: 'facebook'
+                                                 }[class$=fivehundredpx] {
+                                                      background: #00a8e2
+                                                  }[class$=fivehundredpx]:hover:after {
+                                                       content: 'fivehundredpx'
+                                                   }[class$=flattr] {
+                                                        background: #6cbc16
+                                                    }[class$=flattr]:hover:after {
+                                                         content: 'flattr'
+                                                     }[class$=flickr] {
+                                                          background: #e0006a
+                                                      }[class$=flickr]:hover:after {
+                                                           content: 'flickr'
+                                                       }[class$=forrst] {
+                                                            background: #5b9a68
+                                                        }[class$=forrst]:hover:after {
+                                                             content: 'forrst'
+                                                         }[class$=foursquare] {
+                                                              background: #25a0ca
+                                                          }[class$=foursquare]:hover:after {
+                                                               content: 'foursquare'
+                                                           }[class$=github] {
+                                                                background: #666
+                                                            }[class$=github]:hover:after {
+                                                                 content: 'github'
+                                                             }[class$=gmail] {
+                                                                  background: #df4125
+                                                              }[class$=gmail]:hover:after {
+                                                                   content: 'gmail'
+                                                               }[class$=googleplus] {
+                                                                    background: #db4a39
+                                                                }[class$=googleplus]:hover:after {
+                                                                     content: 'googleplus'
+                                                                 }[class$=grooveshark] {
+                                                                      background: #f77f00
+                                                                  }[class$=grooveshark]:hover:after {
+                                                                       content: 'grooveshark'
+                                                                   }[class$=html5] {
+                                                                        background: #e34c26
+                                                                    }[class$=html5]:hover:after {
+                                                                         content: 'html5'
+                                                                     }[class$=ie] {
+                                                                          background: #0094d8
+                                                                      }[class$=ie]:hover:after {
+                                                                           content: 'ie'
+                                                                       }[class$=instagram] {
+                                                                            background: #634d40
+                                                                        }[class$=instagram]:hover:after {
+                                                                             content: 'instagram'
+                                                                         }[class$=instapaper] {
+                                                                              background: #fff;
+                                                                              color: #282828!important
+                                                                          }[class$=instapaper]:hover:after {
+                                                                               color: #fff!important;
+                                                                               content: 'instapaper'
+                                                                           }[class$=itunes] {
+                                                                                background: #4380d0
+                                                                            }[class$=itunes]:hover:after {
+                                                                                 content: 'itunes'
+                                                                             }[class$=klout] {
+                                                                                  background: #e05431
+                                                                              }[class$=klout]:hover:after {
+                                                                                   content: 'klout'
+                                                                               }[class$=lanyrd] {
+                                                                                    background: #387bbd
+                                                                                }[class$=lanyrd]:hover:after {
+                                                                                     content: 'lanyrd'
+                                                                                 }[class$=lastfm] {
+                                                                                      background: #c3000d
+                                                                                  }[class$=lastfm]:hover:after {
+                                                                                       content: 'lastfm'
+                                                                                   }[class$=linkedin] {
+                                                                                        background: #0e76a8
+                                                                                    }[class$=linkedin]:hover:after {
+                                                                                         content: 'linkedin'
+                                                                                     }[class$=meetup] {
+                                                                                          background: #e52a38
+                                                                                      }[class$=meetup]:hover:after {
+                                                                                           content: 'meetup'
+                                                                                       }[class$=myspace] {
+                                                                                            background: #0091df
+                                                                                        }[class$=myspace]:hover:after {
+                                                                                             content: 'myspace'
+                                                                                         }[class$=openid] {
+                                                                                              background: #d0701d
+                                                                                          }[class$=openid]:hover:after {
+                                                                                               content: 'openid'
+                                                                                           }[class$=paypal] {
+                                                                                                background: #1e477a
+                                                                                            }[class$=paypal]:hover:after {
+                                                                                                 content: 'paypal'
+                                                                                             }[class$=pinterest] {
+                                                                                                  background: #910101
+                                                                                              }[class$=pinterest]:hover:after {
+                                                                                                   content: 'pinterest'
+                                                                                               }[class$=pinboard] {
+                                                                                                    background: #4166f9
+                                                                                                }[class$=pinboard]:hover:after {
+                                                                                                     content: 'pinboard'
+                                                                                                 }[class$=plancast] {
+                                                                                                      background: #161616
+                                                                                                  }[class$=plancast]:hover:after {
+                                                                                                       content: 'plancast'
+                                                                                                   }[class$=pocket] {
+                                                                                                        background: #ee4056
+                                                                                                    }[class$=pocket]:hover:after {
+                                                                                                         content: 'pocket'
+                                                                                                     }[class$=podcast] {
+                                                                                                          background: #360961
+                                                                                                      }[class$=podcast]:hover:after {
+                                                                                                           content: 'podcast'
+                                                                                                       }[class$=print] {
+                                                                                                            background: #fff;
+                                                                                                            color: #444!important
+                                                                                                        }[class$=print]:hover:after {
+                                                                                                             color: #fff!important;
+                                                                                                             content: 'print'
+                                                                                                         }[class$=quora] {
+                                                                                                              background: #a82400
+                                                                                                          }[class$=quora]:hover:after {
+                                                                                                               content: 'quora'
+                                                                                                           }[class$=reddit] {
+                                                                                                                background: #cee3f8
+                                                                                                            }[class$=reddit]:hover:after {
+                                                                                                                 content: 'reddit'
+                                                                                                             }[class$=rss] {
+                                                                                                                  background: #fa9b39
+                                                                                                              }[class$=rss]:hover:after {
+                                                                                                                   content: 'rss'
+                                                                                                               }[class$=scribd] {
+                                                                                                                    background: #103847
+                                                                                                                }[class$=scribd]:hover:after {
+                                                                                                                     content: 'scribd'
+                                                                                                                 }[class$=skype] {
+                                                                                                                      background: #00aff0
+                                                                                                                  }[class$=skype]:hover:after {
+                                                                                                                       content: 'skype'
+                                                                                                                   }[class$=smashing] {
+                                                                                                                        background: #ef4e3a
+                                                                                                                    }[class$=smashing]:hover:after {
+                                                                                                                         content: 'smashing'
+                                                                                                                     }[class$=songkick] {
+                                                                                                                          background: #d42236
+                                                                                                                      }[class$=songkick]:hover:after {
+                                                                                                                           content: 'songkick'
+                                                                                                                       }[class$=soundcloud] {
+                                                                                                                            background: #f70
+                                                                                                                        }[class$=soundcloud]:hover:after {
+                                                                                                                             content: 'soundcloud'
+                                                                                                                         }[class$=spotify] {
+                                                                                                                              background: #81b71a
+                                                                                                                          }[class$=spotify]:hover:after {
+                                                                                                                               content: 'spotify'
+                                                                                                                           }[class$=statusnet] {
+                                                                                                                                background: #1a233e
+                                                                                                                            }[class$=statusnet]:hover:after {
+                                                                                                                                 content: 'statusnet'
+                                                                                                                             }[class$=steam] {
+                                                                                                                                  background: #050505
+                                                                                                                              }[class$=steam]:hover:after {
+                                                                                                                                   content: 'steam'
+                                                                                                                               }[class$=stripe] {
+                                                                                                                                    background: #008cdd
+                                                                                                                                }[class$=stripe]:hover:after {
+                                                                                                                                     content: 'stripe'
+                                                                                                                                 }[class$=stumbleupon] {
+                                                                                                                                      background: #f74425
+                                                                                                                                  }[class$=stumbleupon]:hover:after {
+                                                                                                                                       content: 'stumbleupon'
+                                                                                                                                   }[class$=tumblr] {
+                                                                                                                                        background: #34526f
+                                                                                                                                    }[class$=tumblr]:hover:after {
+                                                                                                                                         content: 'tumblr'
+                                                                                                                                     }[class$=twitter] {
+                                                                                                                                          background: #00a0d1
+                                                                                                                                      }[class$=twitter]:hover:after {
+                                                                                                                                           content: 'twitter'
+                                                                                                                                       }[class$=viadeo] {
+                                                                                                                                            background: #f6a73a
+                                                                                                                                        }[class$=viadeo]:hover:after {
+                                                                                                                                             content: 'viadeo'
+                                                                                                                                         }[class$=vimeo] {
+                                                                                                                                              background: #86c9ef
+                                                                                                                                          }[class$=vimeo]:hover:after {
+                                                                                                                                               content: ''
+                                                                                                                                           }[class$=vk] {
+                                                                                                                                                background: #4e7299
+                                                                                                                                            }[class$=vk]:hover:after {
+                                                                                                                                                 content: 'vk'
+                                                                                                                                             }[class$=weibo] {
+                                                                                                                                                  background: #eb182c
+                                                                                                                                              }[class$=weibo]:hover:after {
+                                                                                                                                                   content: 'weibo'
+                                                                                                                                               }[class$=wikipedia] {
+                                                                                                                                                    background: #fff;
+                                                                                                                                                    color: #444!important
+                                                                                                                                                }[class$=wikipedia]:hover:after {
+                                                                                                                                                     color: #fff!important;
+                                                                                                                                                     content: 'print'
+                                                                                                                                                 }[class$=windows] {
+                                                                                                                                                      background: #549e3d
+                                                                                                                                                  }[class$=windows]:hover:after {
+                                                                                                                                                       content: 'windows'
+                                                                                                                                                   }[class$=wordpress] {
+                                                                                                                                                        background: #1e8cbe
+                                                                                                                                                    }[class$=wordpress]:hover:after {
+                                                                                                                                                         content: 'wordpress'
+                                                                                                                                                     }[class$=xing] {
+                                                                                                                                                          background: #036568
+                                                                                                                                                      }[class$=xing]:hover:after {
+                                                                                                                                                           content: 'xing'
+                                                                                                                                                       }[class$=yahoo] {
+                                                                                                                                                            background: #720e9e
+                                                                                                                                                        }[class$=yahoo]:hover:after {
+                                                                                                                                                             content: 'yahoo'
+                                                                                                                                                         }[class$=yelp] {
+                                                                                                                                                              background: #c41200
+                                                                                                                                                          }[class$=yelp]:hover:after {
+                                                                                                                                                               content: 'yelp'
+                                                                                                                                                           }[class$=youtube] {
+                                                                                                                                                                background: #c4302b
+                                                                                                                                                            }[class$=youtube]:hover:after {
+                                                                                                                                                                 content: 'youtube'
+                                                                                                                                                             }[class*=zocial-] {
+                                                                                                                                                                  *zoom: 1;
+                                                                                                                                                                  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF000000',endColorstr='#FF000000');
+                                                                                                                                                                  background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,transparent),color-stop(100%,rgba(0,0,0,0.3)));
+                                                                                                                                                                  background-image: -webkit-linear-gradient(top,transparent 0%,rgba(0,0,0,0.3) 100%);
+                                                                                                                                                                  background-image: -moz-linear-gradient(top,transparent 0%,rgba(0,0,0,0.3) 100%);
+                                                                                                                                                                  background-image: -o-linear-gradient(top,transparent 0%,rgba(0,0,0,0.3) 100%);
+                                                                                                                                                                  background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+                                                                                                                                                                  border-radius: 1rem;
+                                                                                                                                                                  box-shadow: inset 0 .3rem .2rem rgba(255,255,255,.2),inset 0 -.3rem .2rem rgba(0,0,0,.2),0 .2rem .4rem rgba(0,0,0,.2);
+                                                                                                                                                                  color: #fff;
+                                                                                                                                                                  cursor: pointer;
+                                                                                                                                                                  float: left;
+                                                                                                                                                                  height: 4.8rem;
+                                                                                                                                                                  padding-top: 1.2rem;
+                                                                                                                                                                  margin: 1rem;
+                                                                                                                                                                  text-align: center;
+                                                                                                                                                                  text-shadow: 0 .05rem rgba(0,0,0,.8),0 .3rem .4rem rgba(0,0,0,.2),0 -.2rem .4rem rgba(255,255,255,.2);
+                                                                                                                                                                  width: 6rem
+                                                                                                                                                              }[class*=zocial-]:active {
+                                                                                                                                                                   -moz-transform: scale(.98);
+                                                                                                                                                                   -ms-transform: scale(.98);
+                                                                                                                                                                   -webkit-transform: scale(.98);
+                                                                                                                                                                   transform: scale(.98)
+                                                                                                                                                               }[class*=zocial-]:last-child {
+                                                                                                                                                                    margin-bottom: 1em
+                                                                                                                                                                }[class*=zocial-]:hover {
+                                                                                                                                                                     *zoom: 1;
+                                                                                                                                                                     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF000000',endColorstr='#FF000000');
+                                                                                                                                                                     background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,transparent),color-stop(100%,rgba(0,0,0,0.5)));
+                                                                                                                                                                     background-image: -webkit-linear-gradient(top,transparent 0%,rgba(0,0,0,0.5) 100%);
+                                                                                                                                                                     background-image: -moz-linear-gradient(top,transparent 0%,rgba(0,0,0,0.5) 100%);
+                                                                                                                                                                     background-image: -o-linear-gradient(top,transparent 0%,rgba(0,0,0,0.5) 100%);
+                                                                                                                                                                     background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%)
+                                                                                                                                                                 }[class*=zocial-]:after {
+                                                                                                                                                                      display: block;
+                                                                                                                                                                      margin-top: 1.5rem
+                                                                                                                                                                  }
+
+@media(max-width:650px) {
+    [	class*=zocial-] {
+        margin: 1rem 0;
+        width: 100%
+    }
+}

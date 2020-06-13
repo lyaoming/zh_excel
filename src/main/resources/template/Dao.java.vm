@@ -1,0 +1,13 @@
+package ${package}.dao;
+
+import ${package}.entity.${className}Entity;
+
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @date ${datetime}
+ */
+public interface ${className}Dao extends BaseDao<${className}Entity> {
+    void saveBatch(List<${classname}Entity> ${classname}List);
+}

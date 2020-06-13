@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp">
+	<div class="grid-btn">
+		<div class="form-group col-sm-2">
+			<input type="text" class="form-control" v-model="pName"  placeholder="姓名">
+		</div>
+		<label class="radio-inline" v-for="status in personnelStatus">
+			<input type="radio" name="Status" v-model="pStatus"  v-bind:value="status.sId"/> {{status.sName}}&nbsp;&nbsp;
+		</label>
+		<button class="btn btn-success btn-sm" type="button" @click="query" ><i class="fa fa-search"></i>&nbsp;查询</button>
+		<a class="btn btn-warning btn-sm" href="personnel_add.html"><i class="fa fa-plus"></i>&nbsp;新增</a>
+		<button type="button"  class="btn btn-info btn-sm" @click="update"><i class="fa fa-pencil"></i>&nbsp;修改</button>
+		<button type="button" class="btn btn-danger btn-sm" @click="del"><i class="fa fa-trash"></i>&nbsp;删除</button>
+	</div>
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+</div>
+
+<script src="${rc.contextPath}/js/sys/personnel.js?_${date.systemTime}"></script>
+</body>
+</html>

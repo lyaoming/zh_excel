@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/*按钮*/
+#rrapp{
+        overflow-y: auto;
+        overflow:hidden
+    }
+
+#myprogress{
+    height: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+/*end--按钮*/
+
+    /*ztree表格*/
+    .ztree {
+        padding: 0;
+        border: 2px solid #CDD6D5;
+    }
+
+    .ztree li a {
+        vertical-align: middle;
+    }
+
+    .ztree li > a {
+        width: 100%;
+    }
+
+    .ztree li > a,
+    .ztree li a.curSelectedNode {
+        padding-top: 0px;
+        height: auto;
+        border: none;
+        cursor: default;
+        opacity: 1;
+    }
+
+    .ztree li ul {
+        padding-left: 0px
+    }
+
+    .ztree div.diy span {
+        line-height: 30px;
+        vertical-align: middle;
+    }
+
+    .ztree div.diy {
+        /*height: 100%;*/
+        width: 50%;
+        line-height: 30px;
+        border-top: 1px dotted #ccc;
+        border-left: 1px solid #eeeeee;
+        text-align: center;
+        display: inline-block;
+        box-sizing: border-box;
+        /*color: #555;*/
+        font-family: "SimSun";
+        font-size: 12px;
+        overflow:auto;
+    }
+
+    .ztree div.diy:first-child {
+        text-align: left;
+        text-indent: 10px;
+        border-left: none;
+    }
+
+    .ztree .head {
+        background: #fff;
+    }
+
+    .ztree .head div.diy {
+        border-top: none;
+        border-right: 1px solid #ddd;
+        color: #000;
+        font-bold:1200;
+        font-family: "Microsoft YaHei";
+        font-size: 14px;
+    }
+    /*end--ztree表格*/
+
+/*
+加载动画
+ */
+.loading{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: auto;
+    z-index: 101;
+    padding: 6px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #d9edf7;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .3;
+    z-index: 200;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}

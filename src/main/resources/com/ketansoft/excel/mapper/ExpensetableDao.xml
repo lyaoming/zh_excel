@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ketansoft.excel.mapper.ExpensetableDao">
+
+	<select id="queryList" resultType="com.ketansoft.excel.entity.CostRecordEntity">
+		select b.p_name,d.s_name,b.p_number,b.p_department,a.c_id,a.p_id,a.in_date,a.out_date,a.classion,a.all_selfcost,a.self_cost,a.base_num,a.m_factor,a.m_cost,a.m_nocost,a.ma_self,a.ma_reduce,a.cost_all,a.ac_cost,a.pev_ma,a.now_ma,a.out_macount,c.d_name,year from cost_record as a,personnel as b,medical_factor as c,personnel_status as d
+		<where>
+			b.p_status=d.s_id and a.p_id=b.p_id and a.classion=c.d_id and a.p_id = #{pId} and a.year=#{year}
+		</where>
+		<choose>
+			<otherwise>
+				order by a.c_id
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+
+	<select id="selectList" resultType="com.ketansoft.excel.entity.CostRecordEntity">
+		select b.p_name,d.s_name,b.p_number,b.p_department,a.c_id,a.p_id,a.in_date,a.out_date,a.classion,a.all_selfcost,a.self_cost,a.base_num,a.m_factor,a.m_cost,a.m_nocost,a.ma_self,a.ma_reduce,a.cost_all,a.ac_cost,a.pev_ma,a.now_ma,a.out_macount,c.d_name,year from cost_record as a,personnel as b,medical_factor as c,personnel_status as d
+		<where>
+		b.p_status=d.s_id and a.p_id=b.p_id and a.classion=c.d_id and c_id in
+		<foreach item="cId" collection="cIds" open="(" separator="," close=")">
+			#{cId}
+		</foreach>
+		</where>
+		<choose>
+			<otherwise>
+				order by c_id
+			</otherwise>
+		</choose>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from cost_record 
+	</select>
+
+
+</mapper>

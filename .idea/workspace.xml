@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a0dfd69-0e15-47fe-b971-270c1cc85478" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.4.1/elasticsearch-rest-high-level-client-6.4.1.pom.lastUpdated" afterDir="false" />
+      <change afterPath="$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.8.1/elasticsearch-rest-high-level-client-6.8.1.pom.lastUpdated" afterDir="false" />
+      <change afterPath="$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.5.1/elasticsearch-rest-high-level-client-7.5.1.pom" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/DemoApplication.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/AppConfig.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Definition/Animal.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Definition/Person.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Life/BeanPostProcessorExample.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Pojo/BussinessPerson.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Pojo/Cat.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Pojo/DataBaseProperties.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Pojo/Dog.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Pojo/User.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demo/src/main/java/com/example/develop/config/Service/UserService.java" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/artifacts/demon_spring_war.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__antlr_antlr_2_7_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__cn_afterturn_easypoi_annotation_3_2_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__cn_afterturn_easypoi_base_3_2_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__cn_afterturn_easypoi_web_3_2_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_alibaba_druid_1_0_27.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_alibaba_fastjson_1_2_23.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_baidu_aip_java_sdk_4_4_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_github_axet_kaptcha_0_0_9.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_3_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_google_zxing_core_3_2_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_3_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_chain_commons_chain_1_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__commons_validator_commons_validator_1_3_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__dom4j_dom4j_1_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__joda_time_joda_time_2_9_4.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__log4j_log4j_1_2_7.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_28.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__net_sourceforge_tess4j_tess4j_2_0_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_poi_poi_3_9.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_9.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_9.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_shiro_shiro_all_1_3_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_shiro_shiro_guice_1_3_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_8.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_8.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_8.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_freemarker_freemarker_2_3_25_incubating.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_json_json_20160810.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_3.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_2_3.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_slf4j_slf4j_nop_1_7_7.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_aop_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_core_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_orm_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_test_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__sslext_sslext_1_2_0.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/demon-spring/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/elasticsearch-demo-6.4.3/src/main/java/com/esapplication/Config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="C:/develop_software/elasticsearch-demo-7.5.1/src/main/java/com/elasticsearch/Config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.classpath" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.project" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/pom.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/AggregationDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/App.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/BulkDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/CreateIndexDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/GetDocumentDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/HighlightDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/IndexDocumentDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/InitDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/SearchDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/main/java/com/juvenxu/mvnbook/mavtest/SuggestDemo.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/test/ElasticSearchTesting.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/src/test/java/com/juvenxu/mvnbook/mavtest/AppTest.java" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/mavtest-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/surefire-reports/TEST-com.juvenxu.mvnbook.mavtest.AppTest.xml" afterDir="false" />
+      <change afterPath="C:/develop_software/mavtest/target/surefire-reports/com.juvenxu.mvnbook.mavtest.AppTest.txt" afterDir="false" />
+      <change beforePath="C:/.gitignore" beforeDir="false" />
+      <change beforePath="C:/README.md" beforeDir="false" />
+      <change beforePath="C:/package-lock.json" beforeDir="false" />
+      <change beforePath="C:/package.json" beforeDir="false" />
+      <change beforePath="C:/public/favicon.ico" beforeDir="false" />
+      <change beforePath="C:/public/index.html" beforeDir="false" />
+      <change beforePath="C:/src/App.vue" beforeDir="false" />
+      <change beforePath="C:/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="C:/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="C:/src/main.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="C:/" />
+  </component>
+  <component name="ProjectId" id="1dDzk1TDk6g99mZxQej1YDBSEzv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Maven.excel_data [tomcat7:run]">
+    <configuration name="excel_data [clean]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="excel_data [package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="excel_data [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.excel_data [tomcat7:run]" />
+      <item itemvalue="Maven.excel_data [clean]" />
+      <item itemvalue="Maven.excel_data [package]" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a0dfd69-0e15-47fe-b971-270c1cc85478" name="Default Changelist" comment="" />
+      <created>1566542570400</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566542570400</updated>
+      <workItem from="1566542573276" duration="1784000" />
+      <workItem from="1566547196996" duration="917000" />
+      <workItem from="1566549344838" duration="28945000" />
+      <workItem from="1566731924546" duration="664000" />
+      <workItem from="1566804480925" duration="7817000" />
+      <workItem from="1569809430285" duration="7264000" />
+      <workItem from="1569828162810" duration="658000" />
+      <workItem from="1569829351949" duration="2272000" />
+      <workItem from="1571192260155" duration="752000" />
+      <workItem from="1571230705706" duration="33000" />
+      <workItem from="1571365507480" duration="275000" />
+      <workItem from="1591974594116" duration="1326000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (excel_data)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>excel_data</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

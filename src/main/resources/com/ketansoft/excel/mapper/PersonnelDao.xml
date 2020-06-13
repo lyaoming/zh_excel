@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ketansoft.excel.mapper.PersonnelDao">
+
+	<select id="queryObject" resultType="com.ketansoft.excel.entity.PersonnelEntity">
+		select p_id,p_name,p_department,p_number,p_status,s_name from personnel as a, personnel_status as b where s_id=p_status and  p_id = #{value}
+	</select>
+
+	<select id="queryList" resultType="com.ketansoft.excel.entity.PersonnelEntity">
+		select p_id,p_name,p_department,p_number,p_status,s_name from personnel as a, personnel_status as b
+		<where>
+			s_id=p_status
+			<if test="pName!=null and pName.trim()!=''">
+				and p_name like concat('%', #{pName}, '%')
+			</if>
+			<if test="pStatus!=null">
+				and p_status=#{pStatus}
+			</if>
+	   </where>
+
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+
+	<select id="sameList" resultType="com.ketansoft.excel.entity.PersonnelEntity">
+		select p_id from personnel where p_name =#{pName} and p_number=#{pNumber}
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from personnel 
+	</select>
+
+    <insert id="saveBatch">
+        insert into personnel
+        (
+												`p_id`, 
+																`p_name`, 
+																`p_department`, 
+																`p_status`
+							        )
+        VALUES
+        <foreach collection ="list" item="com.ketansoft.excel.entity.PersonnelEntity" separator =",">
+		(
+									#{pId}, 
+												#{pName}, 
+												#{pDepartment}, 
+												#{pStatus}
+					         )
+        </foreach>
+    </insert>
+
+	<insert id="save" parameterType="com.ketansoft.excel.entity.PersonnelEntity">
+		insert into personnel
+		(
+												`p_id`, 
+															`p_name`, 
+															`p_department`, 
+															`p_status`,
+															`p_number`
+								)
+		values
+		(
+												#{pId}, 
+															#{pName}, 
+															#{pDepartment}, 
+															#{pStatus},
+															#{pNumber}
+								)
+	</insert>
+	 
+	<update id="update" parameterType="com.ketansoft.excel.entity.PersonnelEntity">
+		update personnel 
+		<set>
+															<if test="pName != null">`p_name` = #{pName}, </if>
+												<if test="pDepartment != null">`p_department` = #{pDepartment}, </if>
+												<if test="pStatus != null">`p_status` = #{pStatus},</if>
+			                                    <if test="pNumber != null">`p_number` = #{pNumber}</if>
+								</set>
+		where p_id = #{pId}
+	</update>
+	
+	<delete id="delete">
+		delete from personnel where p_id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from personnel where p_id in 
+		<foreach item="pId" collection="array" open="(" separator="," close=")">
+			#{pId}
+		</foreach>
+	</delete>
+
+</mapper>

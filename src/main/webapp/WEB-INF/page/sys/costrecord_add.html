@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+#parse("sys/header.html")
+</head>
+<body>
+<div class="panel panel-default" id="rrapp" v-cloak>
+	<div class="panel-heading">{{title}}</div>
+	<form class="form-horizontal">
+		<div class="form-group">
+		   	<div class="col-sm-2 control-label">姓名</div>
+		   	<div class="col-sm-10">
+		      <input type="text" class="form-control" v-model="costRecord.pName" @click="addPersonnel"  placeholder="姓名"/>
+		    </div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label">类型</div>
+			<div class="col-sm-10">
+				<label class="radio-inline" v-for="factors in medicalFactor">
+					<input type="radio" name="Status" v-model="costRecord.classion"  v-bind:value="factors.dId"/> {{factors.dName}}
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label">上次重疾累计</div>
+			<div class="col-sm-10">
+				<input type="number" class="form-control" v-model="costRecord.pevMa" placeholder="上次重疾累计"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label">输入数据</div>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" v-model="inputData" @click="selectInput"  placeholder="数据"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label">入院日期</div>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="bgTime"  placeholder="入院日期"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label">发票或出院日期</div>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="endTime" placeholder="发票或出院日期"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label">备注</div>
+			<div class="col-sm-10">
+				<textarea type="text" class="form-control" v-model="costRecord.remark" placeholder="备注"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-2 control-label"></div> 
+			<input type="button" class="btn btn-primary" @click="saveOrUpdate" value="确定"/>
+			&nbsp;&nbsp;<input type="button" class="btn btn-warning" @click="back" value="返回"/>
+		</div>
+	</form>
+	<div class="modal fade" id="selectInput" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<input type="button" class="btn btn-primary" @click="input1" value="个人缴付&自付"/>&nbsp;&nbsp;
+					<input type="button" class="btn btn-warning" @click="input2" value="省外重疾计算"/>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<div class="modal fade" id="inputModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<form class="form-horizontal">
+					<div class="form-group">
+						<div class="col-sm-2 control-label">个人缴付</div>
+						<div class="col-sm-10">
+							<input type="number" class="form-control" v-model="costRecord.allSelfcost" placeholder="个人缴付"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-2 control-label">自付</div>
+						<div class="col-sm-10">
+							<input type="number" class="form-control" v-model="costRecord.selfCost" placeholder="自付"/>
+						</div>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary"  data-dismiss="modal" @click="save1" >确定</button>
+					<input type="button" class="btn btn-default"  data-dismiss="modal" value="取消"/>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<div class="modal fade" id="inputModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<form class="form-horizontal">
+					<div class="form-group">
+						<div class="form-group">
+							<div class="col-sm-2 control-label">省外重疾计算</div>
+							<div class="col-sm-10">
+								<input type="number" class="form-control" v-model="costRecord.outMacount" placeholder="省外重疾计算"/>
+							</div>
+						</div>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary"  data-dismiss="modal" @click="save2" >确定</button>
+					<input type="button" class="btn btn-default"  data-dismiss="modal" value="取消"/>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<div class="modal fade" id="selectModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<input type="button" class="btn btn-primary" @click="select" value="选择已有"/>
+					&nbsp;&nbsp;<input type="button" class="btn btn-warning" @click="add" value="新增录入"/>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-2 control-label">姓名</div>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" v-model="personnel.pName" placeholder="姓名"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-2 control-label">部门</div>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" v-model="personnel.pDepartment" placeholder="部门"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-2 control-label">身份证号</div>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" v-model="personnel.pNumber" placeholder="身份证号"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-2 control-label">状态</div>
+							<div class="col-sm-10">
+								<label class="radio-inline" v-for="status in personnelStatus">
+									<input type="radio" name="Status" v-model="personnel.pStatus"  v-bind:value="status.sId"/> {{status.sName}}
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary"  @click="saveOrUpdateP" >确定</button>
+					<input type="button" class="btn btn-default"  data-dismiss="modal" value="取消"/>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" style="width: 90%;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">{{modaltitle}}</h4>
+				</div>
+				<div class="modal-body" style="overflow-x: scroll;">
+					<div class="form-group col-sm-2">
+						<input type="text" class="form-control" v-model="pName"  placeholder="姓名">
+					</div>
+					<label class="radio-inline" v-for="status in personnelStatus">
+						<input type="radio" name="Status" v-model="pStatus"  v-bind:value="status.sId"/> {{status.sName}}&nbsp;&nbsp;
+					</label>
+					<input class="btn btn-default" type="button" @click="query" value="查询"/>&nbsp;&nbsp;
+					<button type="button" class="btn btn-primary"  data-dismiss="modal" @click="saveSelect" >确定</button>
+					<div class="col-md-12">
+					<table id="jqGrid"></table>
+					<div id="jqGridPager"></div>
+					</div>
+				</div>
+				<div class="modal-footer">
+						<input type="button" class="btn btn-default"  data-dismiss="modal" value="取消"/>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+</div>
+
+<script src="${rc.contextPath}/js/sys/costrecord_add.js?_${date.systemTime}"></script>
+<script src="${rc.contextPath}/statics/plugins/layui/layui.js"></script> <!-- 改成你的路径 -->
+<script>
+	//执行一个laydate实例
+	layui.use('laydate',function () {
+		var laydate=layui.laydate;
+		laydate.render({
+			elem: '#bgTime', //指定元素
+			eventElem: '#bgTime-1',
+			type:'date'
+		});
+		laydate.render({
+			elem: '#endTime' ,//指定元素
+			type:'date'
+		});
+	})
+
+</script>
+</body>
+</html>
